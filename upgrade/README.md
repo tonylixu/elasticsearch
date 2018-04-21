@@ -31,6 +31,7 @@ Please refer to `install` directory for how to set up a new `6.x` node or even a
 
 ### Join the new 6.2.4 node into the existing cluster
 Make sure in your `/etc/elasticsearch/elasticsearch.yml` file, the discovery host is set to the exising node:
+`172.31.28.171` is the internal IP of my node569-1
 ```bash
 discovery.zen.ping.unicast.hosts: ["172.31.28.171"]
 ```
