@@ -27,7 +27,7 @@ yellow open   logstash-2015.05.19 fkTaSWPkRRWTFRwheHODjw   5   2       4624     
 ```
 
 ### Install and configure a 6.2.4 ES node
-Please refer to 'install' directory for how to set up a new `6.x` node.
+Please refer to `install` directory for how to set up a new `6.x` node or even a new mixed version of ES cluster.
 
 ### Join the new 6.2.4 node into the existing cluster
 Make sure in your `/etc/elasticsearch/elasticsearch.yml` file, the discovery host is set to the exising node:
