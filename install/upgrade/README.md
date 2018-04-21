@@ -90,11 +90,11 @@ $ curl -X GET "localhost:9200/bank/_search" -H 'Content-Type: application/json' 
 * On node624-1
 ```bash
 $ curl -X GET "localhost:9200/bank/_search" -H 'Content-Type: application/json' -d'
-> {
->   "query": { "match_all": {} },
->   "size": 3
-> }
-> '
+{
+  "query": { "match_all": {} },
+  "size": 3
+}
+'
 {"took":18,"timed_out":false,"_shards":{"total":5,"successful":5,"skipped":0,"failed":0},"hits":{"total":1000,"max_score":1.0,"hits":[{"_index":"bank","_type":"account","_id":"25","_score":1.0,"_source":{"account_number":25,"balance":40540,"firstname":"Virginia","lastname":"Ayala","age":39,"gender":"F","address":"171 Putnam Avenue","employer":"Filodyne","email":"virginiaayala@filodyne.com","city":"Nicholson","state":"PA"}},{"_index":"bank","_type":"account","_id":"44","_score":1.0,"_source":{"account_number":44,"balance":34487,"firstname":"Aurelia","lastname":"Harding","age":37,"gender":"M","address":"502 Baycliff Terrace","employer":"Orbalix","email":"aureliaharding@orbalix.com","city":"Yardville","state":"DE"}},{"_index":"bank","_type":"account","_id":"99","_score":1.0,"_source":{"account_number":99,"balance":47159,"firstname":"Ratliff","lastname":"Heath","age":39,"gender":"F","address":"806 Rockwell Place","employer":"Zappix","email":"ratliffheath@zappix.com","city":"Shaft","state":"ND"}}]}}
 ```
 
