@@ -35,7 +35,7 @@ parser.add_argument("--dryrun",
                     choices=[0,1])
 
 def get_root_token():
-    """Retrieve the user_name and token for a given ECE env
+    '''Retrieve the user_name and token for a given ECE env
     
     Args:
         N/A
@@ -43,8 +43,21 @@ def get_root_token():
     Returns:
         user_name (str): ECE root username
         user_token (str): ECE root token
-    """"
+    '''
     user = get_credentials('ece', 'user')
     token = get_credentials('ece', 'token')
     
     return (user, token)
+
+def set_zone_and_memory():
+    '''Set zone count and memory
+    
+    Determine the zone count and memory config
+    
+    Args:
+        N/A
+    
+    Returns:
+        zone_count (int): Number of zones
+        memory_per_node (int): Memory in MB per node
+    '''
