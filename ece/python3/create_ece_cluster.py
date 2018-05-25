@@ -44,4 +44,7 @@ def get_root_token():
         user_name (str): ECE root username
         user_token (str): ECE root token
     """"
+    user = get_credentials('ece', 'user')
+    token = get_credentials('ece', 'token')
     
+    return (user, token)
